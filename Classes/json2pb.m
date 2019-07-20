@@ -77,7 +77,6 @@ case type: {                                                           \
       } else {
         data = GPBGetMessageBytesField(msg,field);
       }
-      data = [data base64EncodedDataWithOptions:NSDataBase64Encoding64CharacterLineLength];
       jf =  [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
     }
       break;
